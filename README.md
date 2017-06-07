@@ -18,5 +18,7 @@
 
 > [**View code : let**](https://github.com/ngocsonqs/es6-basic/blob/65ce3975736a1c95ba1881079edeae279d37c03e/playground.js)
 
+> - [**View code : var**](https://github.com/ngocsonqs/es6-basic/blob/6f956b7d569a397a0f6897893eeea055d74c68a1/playground.js)
+
 - - -
 

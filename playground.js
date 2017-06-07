@@ -1,35 +1,25 @@
 "use strict";
 
 /*============================
-	01. var
+	01. this trong let & var
 ============================*/
-function foo() {
-	var hello = "Hello World";
-	if ( true ) {
-		var hello = "Hello ES6";
-		console.log(hello);	// ①
-	}
-	console.log(hello);	// ②
-}
+var varGlobal = "var global";
 
-foo();
+let letGlobal = "let global";
+
+console.log(this.varGlobal);	// ①
+console.log(this.letGlobal);	// ②
 
 /*=======================
 
 ■　①:
 ------
 	▲　KẾT QUẢ:
-		Hello ES6
-
-	▲ GIẢI THÍCH:
-		- MẶC DÙ	: ta khai báo biến Hello ở ngoài if
-		- NHƯNG	: vào vòng if ta đã khai báo đè
-		- HƠN NỮA	: var sử dụng trong phạm vi function
-		- NÊN	: khi in ra ở đâu thì nó sẽ lấy giá trị gần nhất trong phạm vi function đó
+		var global
 
 ■　②:
 ------
 	▲　KẾT QUẢ:
-		Hello ES6
+		let global
 
 ========================*/
